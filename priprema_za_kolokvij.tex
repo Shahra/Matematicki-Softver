@@ -2,6 +2,8 @@
 \documentclass[12pt]{scrartcl}
 \usepackage[utf8]{inputenc}
 \usepackage[croatian]{babel}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
 \begin{document}
     %\title \author i \date se moraju definirati, te vrijednosti kasnije koristi \maketitle
     \title{Vježbe iz \LaTeX a}
@@ -10,4 +12,12 @@
     \maketitle
     \section{Uvod}
         Ovdje ide stvarni sadržaj dokumenta.
+        Ovo su "navodnici".
+        Rekao je:
+        \enquote {
+            Koliko puta sam ti rekao:
+                \enquote {
+                    Ne lupaj vratima!
+                }?
+        }.
 \end{document}
